@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Soldaduras y Gases S.A. - Soluciones Industriales
+  </title>
+  <script src="https://cdn.tailwindcss.com/3.4.16">
+  </script>
+  <script>
+   tailwind.config={theme:{extend:{colors:{primary:'#1a3b5c',secondary:'#4a4a4a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-50">
+  <!-- Header -->
+  <header class="fixed w-full bg-white bg-opacity-95 shadow-md z-50">
+   <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <a class="text-2xl font-['Pacifico'] text-primary" href="#">
+     Soldaduras y Gases
+    </a>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8">
+     <a class="nav-link text-gray-700 hover:text-primary font-medium transition-colors" href="#inicio">
+      Inicio
+     </a>
+     <a class="nav-link text-gray-700 hover:text-primary font-medium transition-colors" href="#quienes-somos">
+      Quiénes Somos
+     </a>
+     <a class="nav-link text-gray-700 hover:text-primary font-medium transition-colors" href="#productos">
+      Productos
+     </a>
+     <a class="nav-link text-gray-700 hover:text-primary font-medium transition-colors" href="#servicios">
+      Servicios
+     </a>
+     <a class="nav-link text-gray-700 hover:text-primary font-medium transition-colors" href="#contacto">
+      Contacto
+     </a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" id="mobile-menu-button">
+     <i class="ri-menu-line ri-2x">
+     </i>
+    </button>
+   </div>
+   <!-- Mobile Navigation -->
+   <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
+    <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+     <a class="text-gray-700 hover:text-primary font-medium py-2 transition-colors" href="#inicio">
+      Inicio
+     </a>
+     <a class="text-gray-700 hover:text-primary font-medium py-2 transition-colors" href="#quienes-somos">
+      Quiénes Somos
+     </a>
+     <a class="text-gray-700 hover:text-primary font-medium py-2 transition-colors" href="#productos">
+      Productos
+     </a>
+     <a class="text-gray-700 hover:text-primary font-medium py-2 transition-colors" href="#servicios">
+      Servicios
+     </a>
+     <a class="text-gray-700 hover:text-primary font-medium py-2 transition-colors" href="#contacto">
+      Contacto
+     </a>
+    </div>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero-section min-h-screen flex items-center" id="inicio">
+   <div class="container mx-auto px-4 py-20 text-white">
+    <div class="max-w-2xl">
+     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+      Soluciones Industriales de Alta Calidad
+     </h1>
+     <p class="text-xl mb-8">
+      Expertos en soldaduras y gases industriales con más de 25 años de experiencia en el sector.
+     </p>
+     <a class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 !rounded-button whitespace-nowrap transition-colors" href="#contacto">
+      Contáctanos
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Quiénes Somos -->
+  <section class="py-20 bg-gray-50" id="quienes-somos">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+     Quiénes Somos
+    </h2>
+    <div class="flex flex-col md:flex-row items-center gap-12">
+     <div class="w-full md:w-1/2">
+      <img alt="Nuestras instalaciones" class="w-full h-auto rounded-lg shadow-lg" src="https://readdy.ai/api/search-image?query=modern%20industrial%20facility%20with%20welding%20equipment%20and%20gas%20cylinders%2C%20clean%20and%20organized%20workspace%2C%20professional%20industrial%20environment%2C%20high%20quality%20professional%20photography&amp;width=600&amp;height=500&amp;seq=2&amp;orientation=landscape"/>
+     </div>
+     <div class="w-full md:w-1/2">
+      <h3 class="text-2xl font-semibold mb-4 text-primary">
+       Nuestra Historia
+      </h3>
+      <p class="text-gray-700 mb-6">
+       Fundada en 1998, Soldaduras y Gases S.A. ha evolucionado hasta convertirse en un referente nacional en el suministro de equipos de soldadura, gases industriales y servicios técnicos especializados.
+      </p>
+      <h3 class="text-2xl font-semibold mb-4 text-primary">
+       Misión
+      </h3>
+      <p class="text-gray-700 mb-6">
+       Proporcionar soluciones integrales de alta calidad en soldadura y gases industriales, garantizando la seguridad, eficiencia y satisfacción de nuestros clientes.
+      </p>
+      <h3 class="text-2xl font-semibold mb-4 text-primary">
+       Valores
+      </h3>
+      <ul class="text-gray-700 mb-6 space-y-2">
+       <li class="flex items-start">
+        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+         <i class="ri-check-line">
+         </i>
+        </div>
+        <span>
+         Excelencia en el servicio y productos de calidad
+        </span>
+       </li>
+       <li class="flex items-start">
+        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+         <i class="ri-check-line">
+         </i>
+        </div>
+        <span>
+         Compromiso con la seguridad industrial
+        </span>
+       </li>
+       <li class="flex items-start">
+        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+         <i class="ri-check-line">
+         </i>
+        </div>
+        <span>
+         Innovación constante en procesos y soluciones
+        </span>
+       </li>
+       <li class="flex items-start">
+        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-1">
+         <i class="ri-check-line">
+         </i>
+        </div>
+        <span>
+         Responsabilidad social y ambiental
+        </span>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Productos -->
+  <section class="py-20 bg-white" id="productos">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
+     Nuestros Productos
+    </h2>
+    <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+     Ofrecemos una amplia gama de productos de alta calidad para satisfacer todas las necesidades de su industria.
+    </p>
+    <div class="mb-8 flex flex-wrap justify-center gap-4">
+     <button class="filter-btn active bg-primary text-white py-2 px-6 !rounded-button whitespace-nowrap transition-colors" data-filter="all">
+      Todos
+     </button>
+     <button class="filter-btn bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-6 !rounded-button whitespace-nowrap transition-colors" data-filter="soldadura">
+      Soldadura
+     </button>
+     <button class="filter-btn bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-6 !rounded-button whitespace-nowrap transition-colors" data-filter="gases">
+      Gases
+     </button>
+     <button class="filter-btn bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-6 !rounded-button whitespace-nowrap transition-colors" data-filter="equipos">
+      Equipos
+     </button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <!-- Producto 1 -->
+     <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1" data-category="soldadura">
+      <div class="h-64 overflow-hidden">
+       <img alt="Equipos de Soldadura" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=professional%20welding%20equipment%20and%20accessories%20on%20clean%20white%20background%2C%20high%20quality%20industrial%20welding%20tools%2C%20professional%20product%20photography&amp;width=600&amp;height=400&amp;seq=3&amp;orientation=landscape"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-gray-800">
+        Equipos de Soldadura
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Máquinas de soldadura MIG, TIG y por arco eléctrico de las mejores marcas del mercado.
+       </p>
+       <a class="text-primary font-medium flex items-center" href="#contacto">
+        Más información
+        <div class="w-5 h-5 flex items-center justify-center ml-1">
+         <i class="ri-arrow-right-line">
+         </i>
+        </div>
+       </a>
+      </div>
+     </div>
+     <!-- Producto 2 -->
+     <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1" data-category="gases">
+      <div class="h-64 overflow-hidden">
+       <img alt="Gases Industriales" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=industrial%20gas%20cylinders%20in%20various%20sizes%2C%20oxygen%2C%20acetylene%2C%20and%20argon%20tanks%2C%20clean%20professional%20arrangement%2C%20industrial%20gas%20storage%2C%20professional%20product%20photography&amp;width=600&amp;height=400&amp;seq=4&amp;orientation=landscape"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-gray-800">
+        Gases Industriales
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Suministro de oxígeno, acetileno, argón, nitrógeno y mezclas especiales para procesos industriales.
+       </p>
+       <a class="text-primary font-medium flex items-center" href="#contacto">
+        Más información
+        <div class="w-5 h-5 flex items-center justify-center ml-1">
+         <i class="ri-arrow-right-line">
+         </i>
+        </div>
+       </a>
+      </div>
+     </div>
+     <!-- Producto 3 -->
+     <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1" data-category="soldadura">
+      <div class="h-64 overflow-hidden">
+       <img alt="Consumibles para Soldadura" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=welding%20consumables%20including%20various%20electrodes%2C%20wires%20and%20flux%20on%20clean%20white%20background%2C%20organized%20display%20of%20welding%20materials%2C%20professional%20product%20photography&amp;width=600&amp;height=400&amp;seq=5&amp;orientation=landscape"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-gray-800">
+        Consumibles para Soldadura
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Electrodos, alambres, varillas y fundentes para todo tipo de aplicaciones de soldadura.
+       </p>
+       <a class="text-primary font-medium flex items-center" href="#contacto">
+        Más información
+        <div class="w-5 h-5 flex items-center justify-center ml-1">
+         <i class="ri-arrow-right-line">
+         </i>
+        </div>
+       </a>
+      </div>
+     </div>
+     <!-- Producto 4 -->
+     <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1" data-category="equipos">
+      <div class="h-64 overflow-hidden">
+       <img alt="Equipos de Seguridad" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=welding%20safety%20equipment%20including%20helmets%2C%20gloves%2C%20and%20protective%20clothing%20on%20clean%20white%20background%2C%20professional%20safety%20gear%20for%20industrial%20welding%2C%20professional%20product%20photography&amp;width=600&amp;height=400&amp;seq=6&amp;orientation=landscape"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-gray-800">
+        Equipos de Seguridad
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Máscaras, guantes, delantales y todo el equipo necesario para garantizar la seguridad en el trabajo.
+       </p>
+       <a class="text-primary font-medium flex items-center" href="#contacto">
+        Más información
+        <div class="w-5 h-5 flex items-center justify-center ml-1">
+         <i class="ri-arrow-right-line">
+         </i>
+        </div>
+       </a>
+      </div>
+     </div>
+     <!-- Producto 5 -->
+     <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1" data-category="gases">
+      <div class="h-64 overflow-hidden">
+       <img alt="Reguladores y Flujómetros" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=gas%20regulators%20and%20flow%20meters%20for%20industrial%20applications%2C%20precision%20control%20equipment%20for%20welding%20gases%2C%20technical%20industrial%20equipment%20on%20clean%20background%2C%20professional%20product%20photography&amp;width=600&amp;height=400&amp;seq=7&amp;orientation=landscape"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-gray-800">
+        Reguladores y Flujómetros
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Dispositivos de precisión para el control de gases en aplicaciones industriales y médicas.
+       </p>
+       <a class="text-primary font-medium flex items-center" href="#contacto">
+        Más información
+        <div class="w-5 h-5 flex items-center justify-center ml-1">
+         <i class="ri-arrow-right-line">
+         </i>
+        </div>
+       </a>
+      </div>
+     </div>
+     <!-- Producto 6 -->
+     <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1" data-category="equipos">
+      <div class="h-64 overflow-hidden">
+       <img alt="Equipos de Corte" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=plasma%20cutting%20equipment%20and%20accessories%2C%20modern%20industrial%20cutting%20tools%2C%20precision%20metal%20cutting%20technology%2C%20professional%20product%20photography%20on%20clean%20background&amp;width=600&amp;height=400&amp;seq=8&amp;orientation=landscape"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-gray-800">
+        Equipos de Corte
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Sistemas de corte por plasma, oxicorte y láser para aplicaciones industriales de precisión.
+       </p>
+       <a class="text-primary font-medium flex items-center" href="#contacto">
+        Más información
+        <div class="w-5 h-5 flex items-center justify-center ml-1">
+         <i class="ri-arrow-right-line">
+         </i>
+        </div>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Servicios -->
+  <section class="py-20 bg-gray-50" id="servicios">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
+     Nuestros Servicios
+    </h2>
+    <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+     Ofrecemos servicios especializados para satisfacer todas las necesidades de su empresa.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <!-- Servicio 1 -->
+     <div class="bg-white rounded-lg shadow-md p-8 transition-transform hover:shadow-lg hover:-translate-y-1">
+      <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+       <i class="ri-tools-line ri-2x text-primary">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">
+       Mantenimiento de Equipos
+      </h3>
+      <p class="text-gray-600">
+       Servicio técnico especializado para el mantenimiento preventivo y correctivo de equipos de soldadura y corte.
+      </p>
+     </div>
+     <!-- Servicio 2 -->
+     <div class="bg-white rounded-lg shadow-md p-8 transition-transform hover:shadow-lg hover:-translate-y-1">
+      <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+       <i class="ri-gas-station-line ri-2x text-primary">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">
+       Distribución de Gases
+      </h3>
+      <p class="text-gray-600">
+       Entrega programada y de emergencia de gases industriales en cilindros y tanques de diferentes capacidades.
+      </p>
+     </div>
+     <!-- Servicio 3 -->
+     <div class="bg-white rounded-lg shadow-md p-8 transition-transform hover:shadow-lg hover:-translate-y-1">
+      <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+       <i class="ri-graduation-cap-line ri-2x text-primary">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">
+       Capacitación Técnica
+      </h3>
+      <p class="text-gray-600">
+       Cursos y talleres para el uso adecuado de equipos de soldadura, corte y manejo seguro de gases industriales.
+      </p>
+     </div>
+     <!-- Servicio 4 -->
+     <div class="bg-white rounded-lg shadow-md p-8 transition-transform hover:shadow-lg hover:-translate-y-1">
+      <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+       <i class="ri-building-line ri-2x text-primary">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">
+       Instalaciones Industriales
+      </h3>
+      <p class="text-gray-600">
+       Diseño e instalación de sistemas de distribución de gases, redes de tuberías y estaciones de trabajo.
+      </p>
+     </div>
+     <!-- Servicio 5 -->
+     <div class="bg-white rounded-lg shadow-md p-8 transition-transform hover:shadow-lg hover:-translate-y-1">
+      <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+       <i class="ri-test-tube-line ri-2x text-primary">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">
+       Análisis y Certificación
+      </h3>
+      <p class="text-gray-600">
+       Análisis de pureza de gases, certificación de calidad y pruebas de resistencia en soldaduras.
+      </p>
+     </div>
+     <!-- Servicio 6 -->
+     <div class="bg-white rounded-lg shadow-md p-8 transition-transform hover:shadow-lg hover:-translate-y-1">
+      <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+       <i class="ri-customer-service-2-line ri-2x text-primary">
+       </i>
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">
+       Asesoría Técnica
+      </h3>
+      <p class="text-gray-600">
+       Consultoría especializada para la selección de equipos, gases y procesos adecuados para cada aplicación.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Galería -->
+  <section class="py-20 bg-white">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
+     Galería
+    </h2>
+    <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+     Conozca nuestras instalaciones, productos y servicios a través de nuestra galería de imágenes.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <!-- Imagen 1 -->
+     <div class="gallery-item relative overflow-hidden rounded-lg group">
+      <img alt="Soldador trabajando" class="w-full h-64 object-cover object-top transition-transform group-hover:scale-105" src="https://readdy.ai/api/search-image?query=professional%20welder%20working%20in%20industrial%20facility%2C%20sparks%20flying%2C%20wearing%20full%20protective%20gear%2C%20industrial%20environment%2C%20professional%20photography&amp;width=600&amp;height=400&amp;seq=9&amp;orientation=landscape"/>
+      <div class="gallery-overlay absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 transition-opacity">
+       <div class="text-white text-center p-4">
+        <h3 class="text-xl font-semibold mb-2">
+         Servicios de Soldadura
+        </h3>
+        <p>
+         Profesionales altamente capacitados
+        </p>
+       </div>
+      </div>
+     </div>
+     <!-- Imagen 2 -->
+     <div class="gallery-item relative overflow-hidden rounded-lg group">
+      <img alt="Estación de llenado" class="w-full h-64 object-cover object-top transition-transform group-hover:scale-105" src="https://readdy.ai/api/search-image?query=modern%20gas%20filling%20station%20for%20industrial%20cylinders%2C%20clean%20high-tech%20facility%2C%20industrial%20gas%20production%2C%20professional%20photography&amp;width=600&amp;height=400&amp;seq=10&amp;orientation=landscape"/>
+      <div class="gallery-overlay absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 transition-opacity">
+       <div class="text-white text-center p-4">
+        <h3 class="text-xl font-semibold mb-2">
+         Estación de Llenado
+        </h3>
+        <p>
+         Tecnología de punta para el llenado de gases
+        </p>
+       </div>
+      </div>
+     </div>
+     <!-- Imagen 3 -->
+     <div class="gallery-item relative overflow-hidden rounded-lg group">
+      <img alt="Capacitación técnica" class="w-full h-64 object-cover object-top transition-transform group-hover:scale-105" src="https://readdy.ai/api/search-image?query=technical%20training%20session%20for%20welding%2C%20instructor%20teaching%20students%20in%20workshop%2C%20industrial%20education%2C%20professional%20photography&amp;width=600&amp;height=400&amp;seq=11&amp;orientation=landscape"/>
+      <div class="gallery-overlay absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 transition-opacity">
+       <div class="text-white text-center p-4">
+        <h3 class="text-xl font-semibold mb-2">
+         Capacitación Técnica
+        </h3>
+        <p>
+         Formación especializada para profesionales
+        </p>
+       </div>
+      </div>
+     </div>
+     <!-- Imagen 4 -->
+     <div class="gallery-item relative overflow-hidden rounded-lg group">
+      <img alt="Almacén de gases" class="w-full h-64 object-cover object-top transition-transform group-hover:scale-105" src="https://readdy.ai/api/search-image?query=modern%20warehouse%20with%20industrial%20gas%20cylinders%2C%20organized%20storage%20facility%2C%20logistic%20center%20for%20industrial%20supplies%2C%20professional%20photography&amp;width=600&amp;height=400&amp;seq=12&amp;orientation=landscape"/>
+      <div class="gallery-overlay absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 transition-opacity">
+       <div class="text-white text-center p-4">
+        <h3 class="text-xl font-semibold mb-2">
+         Almacén de Gases
+        </h3>
+        <p>
+         Instalaciones seguras y organizadas
+        </p>
+       </div>
+      </div>
+     </div>
+     <!-- Imagen 5 -->
+     <div class="gallery-item relative overflow-hidden rounded-lg group">
+      <img alt="Corte por plasma" class="w-full h-64 object-cover object-top transition-transform group-hover:scale-105" src="https://readdy.ai/api/search-image?query=precision%20plasma%20cutting%20of%20metal%2C%20automated%20industrial%20cutting%20process%2C%20modern%20manufacturing%20technology%2C%20professional%20photography&amp;width=600&amp;height=400&amp;seq=13&amp;orientation=landscape"/>
+      <div class="gallery-overlay absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 transition-opacity">
+       <div class="text-white text-center p-4">
+        <h3 class="text-xl font-semibold mb-2">
+         Corte por Plasma
+        </h3>
+        <p>
+         Tecnología de precisión para cortes perfectos
+        </p>
+       </div>
+      </div>
+     </div>
+     <!-- Imagen 6 -->
+     <div class="gallery-item relative overflow-hidden rounded-lg group">
+      <img alt="Asesoría técnica" class="w-full h-64 object-cover object-top transition-transform group-hover:scale-105" src="https://readdy.ai/api/search-image?query=technical%20consultation%20with%20client%20in%20industrial%20facility%2C%20engineer%20explaining%20welding%20equipment%20to%20customer%2C%20professional%20business%20meeting%2C%20professional%20photography&amp;width=600&amp;height=400&amp;seq=14&amp;orientation=landscape"/>
+      <div class="gallery-overlay absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 transition-opacity">
+       <div class="text-white text-center p-4">
+        <h3 class="text-xl font-semibold mb-2">
+         Asesoría Técnica
+        </h3>
+        <p>
+         Expertos a su servicio
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contacto -->
+  <section class="py-20 bg-gray-50" id="contacto">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
+     Contáctenos
+    </h2>
+    <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+     Estamos a su disposición para atender cualquier consulta o solicitud. No dude en contactarnos.
+    </p>
+    <div class="flex flex-col lg:flex-row gap-12">
+     <div class="w-full lg:w-1/2">
+      <form class="bg-white rounded-lg shadow-md p-8">
+       <div class="mb-6">
+        <label class="block text-gray-700 font-medium mb-2" for="nombre">
+         Nombre completo
+        </label>
+        <input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" id="nombre" placeholder="Ingrese su nombre" type="text"/>
+       </div>
+       <div class="mb-6">
+        <label class="block text-gray-700 font-medium mb-2" for="email">
+         Correo electrónico
+        </label>
+        <input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" id="email" placeholder="Ingrese su correo electrónico" type="email"/>
+       </div>
+       <div class="mb-6">
+        <label class="block text-gray-700 font-medium mb-2" for="telefono">
+         Teléfono
+        </label>
+        <input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" id="telefono" placeholder="Ingrese su número de teléfono" type="tel"/>
+       </div>
+       <div class="mb-6">
+        <label class="block text-gray-700 font-medium mb-2" for="asunto">
+         Asunto
+        </label>
+        <input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" id="asunto" placeholder="Ingrese el asunto" type="text"/>
+       </div>
+       <div class="mb-6">
+        <label class="block text-gray-700 font-medium mb-2" for="mensaje">
+         Mensaje
+        </label>
+        <textarea class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" id="mensaje" placeholder="Escriba su mensaje" rows="5"></textarea>
+       </div>
+       <div class="mb-6 flex items-center">
+        <input class="custom-checkbox mr-3" id="politica" type="checkbox"/>
+        <label class="text-gray-700" for="politica">
+         Acepto la política de privacidad y términos de uso
+        </label>
+       </div>
+       <button class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 !rounded-button whitespace-nowrap transition-colors" type="submit">
+        Enviar mensaje
+       </button>
+      </form>
+     </div>
+     <div class="w-full lg:w-1/2">
+      <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+       <h3 class="text-2xl font-semibold mb-6 text-gray-800">
+        Información de contacto
+       </h3>
+       <div class="space-y-4">
+        <div class="flex items-start">
+         <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+          <i class="ri-map-pin-line text-primary">
+          </i>
+         </div>
+         <div>
+          <h4 class="font-medium text-gray-800">
+           Dirección
+          </h4>
+          <p class="text-gray-600">
+           Av. Industrial 1250, Zona Industrial
+           <br/>
+           Bogotá, Colombia
+          </p>
+         </div>
+        </div>
+        <div class="flex items-start">
+         <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+          <i class="ri-phone-line text-primary">
+          </i>
+         </div>
+         <div>
+          <h4 class="font-medium text-gray-800">
+           Teléfono
+          </h4>
+          <p class="text-gray-600">
+           +57 (1) 234 5678
+          </p>
+          <p class="text-gray-600">
+           +57 310 234 5678
+          </p>
+         </div>
+        </div>
+        <div class="flex items-start">
+         <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+          <i class="ri-mail-line text-primary">
+          </i>
+         </div>
+         <div>
+          <h4 class="font-medium text-gray-800">
+           Correo electrónico
+          </h4>
+          <p class="text-gray-600">
+           info@soldadurasygases.com
+          </p>
+          <p class="text-gray-600">
+           ventas@soldadurasygases.com
+          </p>
+         </div>
+        </div>
+        <div class="flex items-start">
+         <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+          <i class="ri-time-line text-primary">
+          </i>
+         </div>
+         <div>
+          <h4 class="font-medium text-gray-800">
+           Horario de atención
+          </h4>
+          <p class="text-gray-600">
+           Lunes a Viernes: 8:00 AM - 6:00 PM
+          </p>
+          <p class="text-gray-600">
+           Sábados: 8:00 AM - 1:00 PM
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="mt-8">
+        <h4 class="font-medium text-gray-800 mb-4">
+         Síguenos en redes sociales
+        </h4>
+        <div class="flex space-x-4">
+         <a class="w-10 h-10 flex items-center justify-center bg-[#1877f2] rounded-full text-white hover:bg-[#1877f2]/90 transition-colors" href="https://facebook.com/soldadurasygases" target="_blank">
+          <i class="ri-facebook-fill">
+          </i>
+         </a>
+         <a class="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-full text-white hover:opacity-90 transition-opacity" href="https://instagram.com/soldadurasygases" target="_blank">
+          <i class="ri-instagram-line">
+          </i>
+         </a>
+         <a class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+          <i class="ri-linkedin-fill">
+          </i>
+         </a>
+         <a class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+          <i class="ri-youtube-line">
+          </i>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden h-64">
+       <div class="w-full h-full" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Newsletter -->
+  <section class="py-16 bg-primary">
+   <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center">
+     <h2 class="text-3xl font-bold mb-4 text-white">
+      Suscríbase a nuestro boletín
+     </h2>
+     <p class="text-white/80 mb-8">
+      Reciba las últimas novedades, ofertas especiales y noticias del sector directamente en su correo electrónico.
+     </p>
+     <form class="flex flex-col sm:flex-row gap-4">
+      <input class="flex-grow px-4 py-3 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-white/30" placeholder="Ingrese su correo electrónico" type="email"/>
+      <button class="bg-white text-primary hover:bg-white/90 font-medium py-3 px-6 !rounded-button whitespace-nowrap transition-colors" type="submit">
+       Suscribirse
+      </button>
+     </form>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white pt-16 pb-8">
+   <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+     <div>
+      <h3 class="text-xl font-['Pacifico'] mb-6">
+       Soldaduras y Gases
+      </h3>
+      <p class="text-gray-400 mb-6">
+       Más de 25 años brindando soluciones integrales en soldadura y gases industriales con los más altos estándares de calidad y seguridad.
+      </p>
+      <div class="flex space-x-4">
+       <a class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors" href="#">
+        <i class="ri-facebook-fill">
+        </i>
+       </a>
+       <a class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors" href="#">
+        <i class="ri-instagram-line">
+        </i>
+       </a>
+       <a class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors" href="#">
+        <i class="ri-linkedin-fill">
+        </i>
+       </a>
+       <a class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors" href="#">
+        <i class="ri-youtube-line">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div>
+      <h3 class="text-lg font-semibold mb-6">
+       Enlaces rápidos
+      </h3>
+      <ul class="space-y-3">
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#inicio">
+         Inicio
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#quienes-somos">
+         Quiénes Somos
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#productos">
+         Productos
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#servicios">
+         Servicios
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#contacto">
+         Contacto
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-lg font-semibold mb-6">
+       Productos
+      </h3>
+      <ul class="space-y-3">
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+         Equipos de Soldadura
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+         Gases Industriales
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+         Consumibles
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+         Equipos de Seguridad
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+         Reguladores y Flujómetros
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-lg font-semibold mb-6">
+       Contacto
+      </h3>
+      <ul class="space-y-3">
+       <li class="flex items-start">
+        <div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+         <i class="ri-map-pin-line">
+         </i>
+        </div>
+        <span class="text-gray-400">
+         Av. Industrial 1250, Zona Industrial
+         <br/>
+         Bogotá, Colombia
+        </span>
+       </li>
+       <li class="flex items-start">
+        <div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+         <i class="ri-phone-line">
+         </i>
+        </div>
+        <span class="text-gray-400">
+         +57 (1) 234 5678
+        </span>
+       </li>
+       <li class="flex items-start">
+        <div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+         <i class="ri-mail-line">
+         </i>
+        </div>
+        <span class="text-gray-400">
+         info@soldadurasygases.com
+        </span>
+       </li>
+       <li class="flex items-start">
+        <div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+         <i class="ri-time-line">
+         </i>
+        </div>
+        <span class="text-gray-400">
+         Lun-Vie: 8:00 AM - 6:00 PM
+         <br/>
+         Sáb: 8:00 AM - 1:00 PM
+        </span>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="pt-8 border-t border-gray-700 text-center text-gray-400">
+     <p>
+      © 2025 Soldaduras y Gases S.A. Todos los derechos reservados.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <!-- WhatsApp Button -->
+  <a class="whatsapp-button w-14 h-14 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-colors" href="https://wa.me/573102345678">
+   <i class="ri-whatsapp-line ri-2x">
+   </i>
+  </a>
+  <!-- Scripts -->
+  <script src="scripts.js">
+  </script>
+ </body>
+</html>

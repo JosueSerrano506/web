@@ -1,0 +1,99 @@
+
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Montserrat', sans-serif;
+}
+.hero-section {
+background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://readdy.ai/api/search-image?query=industrial%20welding%20workshop%20with%20sparks%20flying%2C%20professional%20workers%20in%20protective%20gear%2C%20industrial%20equipment%20and%20gas%20cylinders%20visible%20in%20background%2C%20modern%20industrial%20facility%2C%20high%20quality%20professional%20photography&width=1600&height=800&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.custom-checkbox {
+appearance: none;
+-webkit-appearance: none;
+width: 1.25rem;
+height: 1.25rem;
+border: 2px solid #1a3b5c;
+border-radius: 4px;
+outline: none;
+cursor: pointer;
+position: relative;
+}
+.custom-checkbox:checked {
+background-color: #1a3b5c;
+}
+.custom-checkbox:checked::after {
+content: '';
+position: absolute;
+width: 0.5rem;
+height: 0.25rem;
+border-left: 2px solid white;
+border-bottom: 2px solid white;
+transform: rotate(-45deg);
+left: 0.25rem;
+top: 0.25rem;
+}
+.whatsapp-button {
+position: fixed;
+bottom: 2rem;
+right: 2rem;
+z-index: 50;
+}
+.gallery-item:hover .gallery-overlay {
+opacity: 1;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -2px;
+left: 0;
+background-color: #1a3b5c;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+width: 100%;
+}
+.custom-switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+}
+.custom-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 24px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 16px;
+width: 16px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #1a3b5c;
+}
+input:checked + .slider:before {
+transform: translateX(26px);
+}
